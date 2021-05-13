@@ -1,0 +1,29 @@
+method name: getProductsbyrange
+arguments: r1,r2
+end point: localhost:9096/product/{r1}/{r2}
+operation: to search product by cost
+
+method name: getProduct
+arguments: null
+end point: localhost:9096/product
+operation: get the list of all products
+
+method name: getProductByid
+arguments: int id
+end point: localhost:9096/product/{id}
+operation: to search product by product id
+
+method name: sortProductByRating()
+arguments: null
+end point: localhost:9096/product/rating
+operation: sort products by their rating
+
+method name: getProductByRating()
+agruments: int rating
+end point: localhost:9096/product/rating/{rating}
+operation: to get products having the specified rating
+
+method name: deleteProductById()
+arguments: int id
+end point: localhost:9096/product/delete/{id}
+operation: to delete the product having the specified id
